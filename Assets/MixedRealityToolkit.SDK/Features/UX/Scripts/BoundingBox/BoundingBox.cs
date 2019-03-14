@@ -1047,7 +1047,7 @@ namespace Microsoft.MixedReality.Toolkit.SDK.UX
         {
             for (int i = 0; i < balls.Count; ++i)
             {
-                if (handle == balls[i])
+                if (handle == balls[i].gameObject)
                 {
                     return HandleType.Rotation;
                 }
@@ -1055,7 +1055,7 @@ namespace Microsoft.MixedReality.Toolkit.SDK.UX
 
             for (int i = 0; i < corners.Count; ++i)
             {
-                if (handle == corners[i])
+                if (handle == corners[i].gameObject)
                 {
                     return HandleType.Scale;
                 }
